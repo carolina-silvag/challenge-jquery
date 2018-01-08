@@ -7,6 +7,12 @@ $(document).ready( function(){
 /*ocultar flecha*/
 $('.js-back').hide();
 
+/*funcion pintar noticias*/
+function printNews() {
+	$('#newRecipe').append('Nuevas Recetas');
+}
+printNews();
+
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
