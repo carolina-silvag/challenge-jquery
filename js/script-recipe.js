@@ -1,2 +1,2 @@
 /*ocultar menu*/
-$('.js-menu').hide()
+$('.js-menu').hide();

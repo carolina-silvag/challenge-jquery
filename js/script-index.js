@@ -49,7 +49,6 @@ function renderRecipe(recipe) {
 function renderActivities(activitiesArray) {
 	for (var i = 0; i<activitiesArray.length; i++){
 		if(activitiesArray.length != undefined) {
-			console.log('entraaaaaaaaaaaaaaaaaaa');
 			$('.wrapper-message').hide();
 			renderActivity(activitiesArray[i]);
 		}
@@ -62,8 +61,13 @@ function renderActivities(activitiesArray) {
 * Aqui se tiene que crear el HTML que esta en el 
 * archivo "templates/templates-activity.html"
 */
+_.templateSettings.variable = 'rc';
+var template = _.template(
+	$('script.template').html()
+);
+
 function renderActivity(recipe) {
-	
+	$('.list-activities').append(template(recipe))
 }
 
 

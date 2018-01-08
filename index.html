@@ -83,6 +83,21 @@
     </div>
 
     <!--JS FILES-->
+    <script type="text/template" class="template">
+      <a href="#" class="item-activity">
+        <span class="attribution">
+          <span class="avatar">
+            <img src="<%- rc.userAvatar %>" class="image-avatar">
+          </span> 
+          <span class="meta">
+            <span class="author"><%- rc.userName %></span> made 
+            <span class="recipe"><%- rc.recipeName %></span>: <%- rc.text %>
+            <span class="location">&mdash;<%- rc.place %></span>
+          </span>
+        </span>
+        <div class="bg-image" style="background-image: url('<%- rc.image %>');"></div>
+      </a>
+    </script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script type="text/javascript" src="data/recipes.js"></script>
